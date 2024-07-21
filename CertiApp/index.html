@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>CertiApp</title>
+	<link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+
+
+	<nav style="float:right">
+		<a href="index.html"><input type=button value=Home style="background-color:#4d9bf9"></a>
+		<a href="issue.html"><input type=button value="Issue Certifiacte"></a>
+	</nav>
+	<br>
+	<div style="text-align: center;">
+		<h1>Certificate DApp</h1>
+		<br><br>
+		<pre>      <img src="https://cdn.vectorstock.com/i/500p/59/60/graduation-cap-and-diploma-vector-2175960.jpg" alt="" width="350px" height="300px" style="margin-right: 60px;"></pre>
+		<br><br>
+		<form id="searchButton">
+			<input type=text id="searchTerm" name=search placeholder="enter certificate id to view">
+			<input type="submit" value=search onclick="submitCerti()" style="background-color:#4d9bf9">
+		</form>
+	</div>
+</body>
+<script>
+	document.getElementById("searchButton").addEventListener("submit", (event) => {
+		event.preventDefault()
+	})
+
+	function submitCerti() {
+		let searchTerm = document.getElementById("searchTerm").value
+		window.location.href = `viewCerti.html?searchTerm=${searchTerm}`
+
+	}
+</script>
+
+</html>

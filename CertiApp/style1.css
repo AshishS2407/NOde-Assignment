@@ -1,0 +1,164 @@
+body {
+    background-color: #f2f2f2;
+}
+
+.du {
+    float: right;
+}
+
+input.g {
+    background-color: #1583e6; 
+    width: 160px;
+    height: 50px;
+    border-radius: 10px;
+    border-style: hidden;
+    text-decoration: none;
+    color: azure;
+    font-size: 20px;
+}
+
+input.h {
+    width: 160px;
+    height: 50px;
+    border-radius: 10px;
+    border-style: hidden;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+div {
+    text-align: center;
+}
+
+input.cer {
+    width: 35%;
+    height: 40px;
+    font-size: 20px;
+}
+
+input.ho {
+    width: 20%;
+    height: 30px;
+    font-size: 20px;
+}
+
+select {
+    width: 35%;
+    height: 40px;
+    font-size: 20px;
+}
+
+h2 {
+    margin-left: 30px;
+}
+
+h1.r {
+    margin-left: 250px;
+}
+
+div.juju {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: left;
+    border-style: hidden;
+    background-color: #eef7f6; 
+    padding: 15px;
+    width: 80%;
+    height: 560px;
+    padding-bottom: 30px;
+    padding-left: 80px;
+}
+
+p.l {
+    font-size: 33px;
+    font-weight: lighter;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+a.b {
+    float: right;
+}
+
+input.a {
+    background-color: rgb(67, 114, 233);
+    border-radius: 5px;
+    padding: 4px;
+    margin: 4px;
+    border: none;
+    height: fit-content;
+    width: fit-content;
+    color: white;
+}
+
+input.b {
+    border-radius: 5px;
+    padding: 4px;
+    margin: 4px;
+    border: none;
+    height: fit-content;
+}
+
+h1 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.first {
+    text-align: center;
+}
+
+img {
+    height: 250px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input.c {
+    background-color: aqua;
+    border: none;
+    color: white;
+    height: fit-content;
+}
+
+input.d {
+    border-color: aqua;
+}
+
+input.e {
+    border: none;
+    border-radius: 5px;
+    background-color: aqua;
+    width: 120px;
+    height: 40px;
+    font-weight: bold;
+}
+
+.i {
+    background-color: rgb(216, 218, 217);
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-bottom: 50px;
+}
+
+.nav {
+    float: right;
+}
+
+.last {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    margin: 100px;
+    margin-left: 200px;
+    margin-right: 200px;
+    height: 450px;
+    border-style: solid;
+    border-color: rgb(179, 194, 194);
+    border-radius: 10px;
+}
+
+.align {
+    height: 35px;
+    width: 500px;
+}

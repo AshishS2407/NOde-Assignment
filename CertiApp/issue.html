@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Issue Certificate</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav style="float:right">
+        <a href="index.html"><input type=button value=Home> </a>
+        <a href="issue.html"><input type=button value="Issue Certificate" style="background-color:#4d9bf9"></a>
+    </nav>
+    <br>
+    <h2 style="margin-right: 1600px;">Certificate DApp</h2>
+    <br>
+    <h3>Issue Certificate</h3>
+    <form id="certiForm">
+        <label for="course">Select Course*</label>
+        <select id="course">
+            <option value="certified blockchain associate">Certified Blockchain Associate</option>
+            <option value="developer essentials for blockchain">Developer Essentials for Blockchain</option>
+            <option value="blockchain foundation program">Blockchain Foundation Program</option>
+        </select>
+        <label for="cid">Certificate ID*</label>
+        <input type=text name=id id="cid" placeholder="Certificate ID">
+        <label for="name">Candidate Name*</label>
+        <input type=text name=id id="name" placeholder="Name">
+        <label for="grade">Grade*</label>
+        <select name=grade id="grade">
+            <option value=s>S</option>
+            <option value=a>A</option>
+            <option value=b>B</option>
+            <option value=c>C</option>
+        </select>
+        <label for="date">Issue Date*</label>
+        <input type=date id="date" name=date>
+        <button type="submit" onclick="createCerti()">Submit</button>
+    </form>
+
+    <script>
+        document.getElementById("certiForm").addEventListener("submit", (event) => {
+            event.preventDefault();
+            createCerti();
+        });
+
+        function createCerti() {
+            let cid = document.getElementById("cid").value;
+            if (localStorage.getItem(cid) !== null) {
+                alert("Certificate ID already exists");
+            } else {
+                let name = document.getElementById("name").value;
+                let grade = document.getElementById("grade").value;
+                let date = document.getElementById("date").value;
+                let course = document.getElementById("course").value;
+                let certiData = JSON.stringify({ name, grade, date, course });
+                localStorage.setItem(cid, certiData);
+                window.location.href = `viewCerti.html?cid=${cid}`;
+            }
+        }
+    </script>
+</body>
+
+</html>
+
+
